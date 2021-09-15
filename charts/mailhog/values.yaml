@@ -25,7 +25,7 @@ service:
   externalIPs: []
   loadBalancerIP: ""
   loadBalancerSourceRanges: []
-  type: LoadBalancerIP
+  type: LoadBalancer
   port:
     http: 80
     smtp: 1025
