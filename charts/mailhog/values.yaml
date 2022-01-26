@@ -27,7 +27,7 @@ service:
   loadBalancerSourceRanges: []
   type: LoadBalancer
   port:
-    http: 80
+    http: 8025
     smtp: 1025
   nodePort:
     http: ""
@@ -63,10 +63,10 @@ ingress:
   #      - chart-example.local
 
 auth:
-  enabled: false
+  enabled: true
   existingSecret: ""
   fileName: auth.txt
-  fileContents: "test:$2a$04$sWAx.G3s1dMa7wzKCa380u/usmQXew3gLvtO5fcQGDAm77cXhgsGS"
+  fileContents: "test:$2a$12$VfsUE5R57LjSSFmmcJ3LHenEBe1VfFBL6sa7Q63a8lgwvNCgjmzYe"
 
 # JSON file defining outgoing SMTP servers
 outgoingSMTP:
